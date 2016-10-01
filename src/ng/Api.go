@@ -37,7 +37,7 @@ func (this *Api) RecNew(domain string, name string, ip string, ipType string) (O
 }
 
 func (this *Api) RecEdit(domain string, name string, id string, ip string, ipType string) error {
-	_, err := this.callMethod("rec_edit", map[string]string{"z":domain, "name":name, "id":id, "content":ip, "type":ipType, "ttl":"1", "service_mode":"1"})
+	_, err := this.callMethod("rec_edit", map[string]string{"z":domain, "name":name, "id":id, "content":ip, "type":ipType, "ttl":"1", "service_mode":"0"})
 	return err
 }
 
